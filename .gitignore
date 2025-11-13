@@ -1,0 +1,26 @@
+# Simulation artifacts
+sim/
+*.vcd
+*.vvp
+*.out
+*.log
+*.pyc
+__pycache__/
+*.swp
+*.swo
+*~
+
+# OpenLane runs
+openlane/*/runs/
+
+# Build artifacts
+obj_dir/
+*.o
+
+# IP symbolic links (already linked via ipm_linker)
+ip/CF_SPI
+ip/CF_IP_UTIL
+
+# Temporary files
+.*.swp
+*.bak

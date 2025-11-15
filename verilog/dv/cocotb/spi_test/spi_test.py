@@ -56,7 +56,7 @@ async def spi_test(dut):
         byte_val = bin(byte_idx)[2:].zfill(8)[::-1]
         cocotb.log.info(f"byte val = {byte_val}")
         for bit_idx in range(8):
-            await FallingEdge(spi_sck)
+            await RisingEdge(spi_sck)
             if byte_val[bit_idx] == "1":
                 spi_miso.value = 1
             else:

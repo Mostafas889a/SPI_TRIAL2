@@ -71,7 +71,7 @@ void main(void)
     for (int i = 0; i < 8; i++) {
         if (rx_data[i] != test_rxdata[i]) {
             vgpio_write_output(0XEEEE);
-            breaj=
+            break;
         }
     }
     

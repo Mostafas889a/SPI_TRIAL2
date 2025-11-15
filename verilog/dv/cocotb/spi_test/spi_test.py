@@ -53,7 +53,7 @@ async def spi_test(dut):
     test_data = [0x66, 0xBB, 0x23, 0x42, 0x78, 0xab, 0xbb, 0xCF]
 
     for byte_idx in test_data:
-        byte_val = bin(byte_idx)[2:].zfill(8)[::-1]
+        byte_val = bin(byte_idx)[2:].zfill(8)
         cocotb.log.info(f"byte val = {byte_val}")
         for bit_idx in range(8):
             if byte_val[bit_idx] == "1":

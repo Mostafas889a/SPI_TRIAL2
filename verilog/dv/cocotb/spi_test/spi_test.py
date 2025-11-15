@@ -60,7 +60,7 @@ async def spi_test(dut):
                 spi_miso.value = 1
             else:
                 spi_miso.value = 0
-            await Fa(spi_sck)
+            await FallingEdge(spi_sck)
 
 
     

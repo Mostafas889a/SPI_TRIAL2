@@ -56,7 +56,7 @@ void main(void)
     }
     
     CF_SPI_waitTxFifoEmpty(SPI_BASE);
-    
+    CF_SPI_FifoRxFlush(SPI_BASE);
     vgpio_write_output(3);
     
     uint8_t rx_data[8];

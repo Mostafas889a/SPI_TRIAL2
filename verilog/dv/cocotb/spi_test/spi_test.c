@@ -64,13 +64,14 @@ void main(void)
         CF_SPI_writeData(SPI_BASE, 0x0);
         CF_SPI_waitRxFifoNotEmpty(SPI_BASE);
         rx_data[i] = CF_SPI_readData(SPI_BASE);
+        vgpio_write_output(rx_data[i]);
     }
     uint8_t test_rxdata[8] = {0x66, 0xBB, 0x23, 0x42, 0x78, 0xab, 0xbb, 0xCF};
     int pass = 1;
     for (int i = 0; i < 8; i++) {
-        vgpio_write_output(rx_data[i]);
         if (rx_data[i] != test_rxdata[i]) {
             vgpio_write_output(0XEEEE);
+            breaj=
         }
     }
     

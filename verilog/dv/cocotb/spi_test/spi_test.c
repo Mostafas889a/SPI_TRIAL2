@@ -71,7 +71,6 @@ void main(void)
         vgpio_write_output(rx_data[i]);
         if (rx_data[i] != test_rxdata[i]) {
             vgpio_write_output(0XEEEE);
-            break;
         }
     }
     

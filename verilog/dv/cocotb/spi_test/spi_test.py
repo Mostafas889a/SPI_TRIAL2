@@ -42,7 +42,6 @@ async def spi_test(dut):
             await RisingEdge(spi_sck)
             bit = spi_mosi.value
             byte_val = (byte_val << 1) | int(bit)
-        
         rx_data.append(byte_val)
         cocotb.log.info(f"[TEST] Received byte {byte_idx}: 0x{byte_val:02X}")
     

@@ -2,7 +2,7 @@ CARAVEL_ROOT: /nc/templates/caravel
 MCW_ROOT: /nc/templates/mgmt_core_wrapper
 PDK: sky130A
 PDK_ROOT: /nc/apps/pdk
-USER_PROJECT_ROOT: /workspace/caravel_spi_project
+USER_PROJECT_ROOT: /workspace/SPI_TRIAL2
 caravan: false
 clk_period_ns: 25      # Clock period in nanoseconds
 emailto:
